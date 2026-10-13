@@ -1,0 +1,45 @@
+* {
+    font-family: sans-serif;
+}
+
+body {
+    text-align: center;
+}
+
+img {
+    background-color: #888;
+    border-radius: 25px;
+    width: 100%;
+}
+
+.galeria {
+    columns: 4;
+    column-gap: 12px;
+}
+
+.galeria img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 12px;
+    break-inside: avoid;
+    border-radius: 8px;
+}
+
+@media (max-width: 1000px) {
+    .galeria {
+        columns: 3;
+    }
+}
+
+@media (max-width: 700px) {
+    .galeria {
+        columns: 2;
+    }
+}
+
+@media (max-width: 400px) {
+    .galeria {
+        columns: 1;
+    }
+}
